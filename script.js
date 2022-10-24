@@ -2,7 +2,6 @@ var timeDisplayEl = $('#currentDay');
 var saveBtn = $('.saveBtn');
 var timers = $('.description');
 
-console.log(timers);
 
 
 function displayTime() {
@@ -30,8 +29,6 @@ setClasses();
 
 
 saveBtn.click(function () {
-
-
 });
 
 setInterval(displayTime, 1000);
