@@ -12,8 +12,8 @@ function displayTime() {
 
 // This function set specific classes according to the current time
 function setClasses() {
-  // var currentHour = moment().format("H");
-  var currentHour = 12;
+  var currentHour = moment().format("H");
+  // var currentHour = 12;
   for (let i = 0; i < timers.length; i++) {
     if (Number(currentHour) > Number(timers[i].dataset.hour)) {
       timers[i].classList.add("past");
